@@ -1,0 +1,74 @@
+import groovy.json.JsonSlurper
+
+// 定义一个task来处理JSON配置
+def processConfig(Project project) {
+    // 定义JSON文件路径
+    def configFilePath = 'plugin.config.json'
+    def configFile = project.file(configFilePath)
+
+    // 检查文件是否存在
+    if (!configFile.exists()) {
+        logger.log(LogLevel.WARN, "[I] Configuration file '$configFilePath' does not exist. Skipping config processing.")
+//        println "[I] Configuration file '$configFilePath' does not exist. Skipping config processing."
+        return
+    }
+
+    try {
+        // 解析JSON文件
+        def configJson = new JsonSlurper().parseText(configFile.text)
+
+        // 合并manifestPlaceholders，如果字段存在
+        configJson.manifestPlaceholders?.each { placeholder ->
+            project.android.defaultConfig.manifestPlaceholders[placeholder.name] = placeholder.value
+        }
+        logger.log(LogLevel.INFO, "[I] android.defaultConfig.manifestPlaceholders:${android.defaultConfig.manifestPlaceholders}")
+//        println("[I] android.defaultConfig.manifestPlaceholders:" + android.defaultConfig.manifestPlaceholders)
+
+
+        // 动态加载依赖，如果字段存在
+        configJson.implementation?.each { implementation ->
+            implementation.libs.each { lib ->
+                project.dependencies.add("implementation", "${lib}:${implementation.version}")
+                println("[I] add implementation:" + "${lib}:${implementation.version}")
+            }
+        }
+    } catch (Exception e) {
+//        println "[E] Error parsing '$configFilePath': ${e.message}"
+        throw new GradleException("[E] Error parsing '$configFilePath': ${e.message}")
+    }
+}
+// 将方法暴露给引用此脚本的项目
+ext.processConfig = this.&processConfig
+
+
+task updateResource {
+    doFirst {
+        println "[I] start connect with devtools"
+        def url = miniAppPluginConfig.devtoolsResourceUrl
+        def shouldInterrupt = false
+
+        def response = ""
+        try {
+            println "[I] url: $url"
+            response = new URL(url).getText()
+            println("[I] response: $response")
+
+            if (response.contains("success")) {
+                // 请求成功
+                println("[I] update Android resource done, ${response}")
+            } else {
+                shouldInterrupt = true
+            }
+        } catch (Exception e) {
+            println("[W] connecting with devtools fail.." + e.getMessage())
+        }
+
+        if (shouldInterrupt) {
+            def tip = ""
+            if (response != "") {
+                tip = ", please open Weixin DevTools to check msg: " + response
+            }
+            throw new GradleException("update Android resource fail" + tip)
+        }
+    }
+}

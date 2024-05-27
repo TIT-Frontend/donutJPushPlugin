@@ -1,0 +1,11 @@
+#font_set {
+    alllevel : 16 17 20 24.5 27.5 29.75 29.75;
+    chatLevel : 16 17 20 24.5 27.5 28.73 30;
+    webLevel : 16 17 20 24.5 27.5 30;
+}
+
+#navigation_bar
+{
+    landscape_height : 44;
+    titleview_fontsize : 20 ;
+}

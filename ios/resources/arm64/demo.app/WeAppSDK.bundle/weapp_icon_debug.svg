@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="24px" viewBox="0 0 28 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>Icon / Terminal</title>
+    <desc>Created with Sketch.</desc>
+    <g id="视觉稿---小程序：小程序菜单优化1.3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.900000036">
+        <g id="开发版-备份" transform="translate(-230.000000, -620.000000)" stroke="#000000" stroke-width="1.6">
+            <g id="Icon-/-Terminal" transform="translate(228.000000, 616.000000)">
+                <rect id="Rectangle" x="2.93333333" y="5.06666667" width="26.1333333" height="21.8666667" rx="2.13333333"></rect>
+                <polyline id="Path" points="9.53333333 12.3333333 13.2666667 15.9741301 9.53333333 19.8"></polyline>
+                <path d="M15.4,19.2666667 L22.8666667,19.2666667" id="Path-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

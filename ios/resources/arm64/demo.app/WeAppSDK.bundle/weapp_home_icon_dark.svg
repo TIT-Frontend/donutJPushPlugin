@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>Black Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Black-Icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2">
+            <rect id="Rectangle" fill-opacity="0" fill="#FFFFFF" x="0" y="0" width="24" height="24"></rect>
+            <g id="Group" transform="translate(3.000000, 4.000000)">
+                <rect id="Path" fill-opacity="0.9" fill="#000000" x="8" y="13" width="2" height="3"></rect>
+                <path d="M13.4369709,15.2036376 L13.4369709,8.85363757 L16.6572751,8.85363757 C16.6940941,8.85363757 16.7239418,8.82378988 16.7239418,8.7869709 C16.7239418,8.7692898 16.716918,8.75233287 16.7044156,8.73983045 L8.83411135,0.869526215 C8.8080764,0.843491262 8.7658654,0.843491262 8.73983045,0.869526215 L0.869526215,8.73983045 C0.843491262,8.7658654 0.843491262,8.8080764 0.869526215,8.83411135 C0.88202864,8.84661378 0.898985567,8.85363757 0.916666667,8.85363757 L4.1369709,8.85363757 L4.1369709,15.2036376 C4.1369709,15.2404566 4.16681858,15.2703042 4.20363757,15.2703042 L13.3703042,15.2703042 C13.4071232,15.2703042 13.4369709,15.2404566 13.4369709,15.2036376 Z" id="Path" stroke="#000000" stroke-width="1.7"></path>
+            </g>
+        </g>
+    </g>
+</svg>

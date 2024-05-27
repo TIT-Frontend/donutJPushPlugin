@@ -1,0 +1,121 @@
+apply from: rootProject.file('gradle/build_library.gradle')
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.kezong.fat-aar'
+
+
+
+android {
+
+    def miniAppPluginConfig = rootProject.ext.miniAppPluginConfig
+    defaultConfig {
+        buildConfigField "String", "PLUGIN_ID", "\"$miniAppPluginConfig.pluginId\""
+
+    }
+
+}
+
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+
+   maven {
+        url "https://maven.oa.com/nexus/content/repositories/google-maven/"
+    }
+}
+
+def saaaSDKVersionDepend = rootProject.ext.saaaSDKVersionDepend
+
+def libsDir = rootProject.file('libs')
+
+if (!file("$libsDir/com/tencent/luggage/wxa-standalone-open-runtime-SaaA-plugin-sdk/${saaaSDKVersionDepend}").exists()) {
+    libsDir.mkdir()
+
+    apply plugin: 'de.undercouch.download'
+    
+    def zipFileName = "wxa-standalone-open-runtime-SaaA-sdk-all-${saaaSDKVersionDepend}.zip"
+    download.run {
+        src "https://dldir1.qq.com/WechatWebDev/donut/android/pluginsdk/${zipFileName}"
+        dest libsDir
+    }
+    def zipFilePath = "$libsDir/$zipFileName"
+    copy {
+        def subDir = 'localAar'
+        from {
+            zipTree(zipFilePath).matching { include "$subDir/**" }
+        }
+        into libsDir
+        eachFile { fcp ->
+            fcp.path = fcp.path.replaceFirst("^$subDir", '')
+        }
+        includeEmptyDirs false
+    }
+    file(zipFilePath).delete()
+}
+
+def jpushVer = "5.3.1"
+
+    dependencies {
+        implementation "androidx.exifinterface:exifinterface:1.1.0"
+
+        implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+        implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+        api "androidx.constraintlayout:constraintlayout:1.1.3"
+
+        api 'com.google.android.material:material:1.0.0'
+
+        compileOnly("com.tencent.luggage:wxa-standalone-open-runtime-SaaA-plugin-sdk:$saaaSDKVersionDepend") {}
+
+        // 此处以JPush 5.0.3 版本为例，注意：从 5.0.0 版本开始可以自动拉取 JCore 包，无需另外配置
+        implementation "cn.jiguang.sdk:jpush:${jpushVer}"
+
+        // 真正构建时用下面的 aar dependency
+        // 小米
+        embed(name: "jpush-android-plugin-xiaomi-v${jpushVer}", ext: 'jar')
+        embed(name: "MiPush_SDK_Client_5_9_9-C", ext: 'jar')
+
+
+//        // 魅族 不知道为啥编译有问题
+//        embed(name: "jpush-android-plugin-meizu-v${jpushVer}", ext: 'jar')
+//        embed(name: "push-internal-4.2.7", ext: 'aar')
+
+        // vivo
+        embed(name: "jpush-android-plugin-vivo-v${jpushVer}", ext: 'jar')
+
+        // oppo
+        embed(name: "jpush-android-plugin-oppo-v${jpushVer}", ext: 'jar')
+        embed(name: "com.heytap.msp_3.4.0", ext: 'aar')
+        //OPPO 3.1.0 aar 及其以上版本需要添加以下依赖
+        implementation 'com.google.code.gson:gson:2.6.2'
+        implementation 'commons-codec:commons-codec:1.15'
+        implementation 'androidx.annotation:annotation:1.1.0'
+
+        // 荣耀
+        embed(name: "jpush-android-plugin-honor-v${jpushVer}", ext: 'jar')
+        embed(name: "HiPushSDK-7.0.61.302", ext: 'aar')
+
+
+        embed(name: "push_sdk_v3.0.0.7_488", ext: 'aar')
+
+
+    }
+
+    clearDuplicatedJniLibs([
+            '**/jni/x86/**',
+            '**/jni/x86_64/**',
+            '**/jni/armeabi/**',
+            '**/jni/**/libc++_shared.so'
+    ])
+
+    project.ext.pomDeps = [
+            "cn.jiguang.sdk:jpush": jpushVer,
+            "com.google.code.gson:gson" : "2.6.2",
+            "commons-codec:commons-codec" : "1.15",
+//            "cn.jiguang.sdk.plugin:xiaomi": jpushVer,
+    ]
+
+
+

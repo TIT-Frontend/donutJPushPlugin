@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>编组 14</title>
+    <desc>Created with Sketch.</desc>
+    <g id="基础体验提升" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-14">
+            <g id="编组-13">
+                <circle id="椭圆形" fill-opacity="0.9" fill="#07C160" cx="20" cy="20" r="20"></circle>
+                <path d="M20,0 C31.045695,0 40,8.954305 40,20 C40,31.045695 31.045695,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 Z M20,2.5 C10.3350169,2.5 2.5,10.3350169 2.5,20 C2.5,29.6649831 10.3350169,37.5 20,37.5 C29.6649831,37.5 37.5,29.6649831 37.5,20 C37.5,10.3350169 29.6649831,2.5 20,2.5 Z" id="椭圆形备份" fill-opacity="0.9" fill="#FFFFFF" fill-rule="nonzero"></path>
+                <path d="M21.5,13.64 L27.1568542,19.2968542 C27.5473785,19.6873785 27.5473785,20.3205435 27.1568542,20.7110678 L21.5,26.3679221 L19.732233,24.6001551 L23.081,21.25 L13,21.25 L13,18.75 L23.075,18.75 L19.732233,15.407767 L21.5,13.64 Z" id="形状结合" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

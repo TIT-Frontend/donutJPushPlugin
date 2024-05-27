@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>添加到桌面</title>
+    <desc>Created with Sketch.</desc>
+    <g id="添加到桌面" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.Icons/Filled/cellphone" fill="#91D300">
+            <g id="Group">
+                <path d="M54,6 C55.6568542,6 57,7.34314575 57,9 L57,9 L57,63 C57,64.6568542 55.6568542,66 54,66 L54,66 L18,66 C16.3431458,66 15,64.6568542 15,63 L15,63 L15,9 C15,7.34314575 16.3431458,6 18,6 L18,6 Z M36,54 C34.3431458,54 33,55.3431458 33,57 C33,58.6568542 34.3431458,60 36,60 C37.6568542,60 39,58.6568542 39,57 C39,55.3431458 37.6568542,54 36,54 Z" id="图标颜色"></path>
+            </g>
+        </g>
+    </g>
+</svg>

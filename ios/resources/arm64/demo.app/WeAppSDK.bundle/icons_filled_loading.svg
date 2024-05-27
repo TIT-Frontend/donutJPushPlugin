@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>画板</title>
+    <defs>
+        <linearGradient x1="94.0869141%" y1="0%" x2="94.0869141%" y2="90.559082%" id="linearGradient-1">
+            <stop stop-color="#EDEDED" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#EDEDED" stop-opacity="0.3" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="8.67370605%" x2="100%" y2="90.6286621%" id="linearGradient-2">
+            <stop stop-color="#EDEDED" offset="0%"></stop>
+            <stop stop-color="#EDEDED" stop-opacity="0.3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="画板" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.9">
+        <g id="LoadingWithe备份">
+            <path d="M28,0 C43.463973,0 56,12.536027 56,28 C56,43.463973 43.463973,56 28,56 L28,51.1 C40.7577777,51.1 51.1,40.7577777 51.1,28 C51.1,15.2422223 40.7577777,4.9 28,4.9 L28,0 Z" id="路径" fill="url(#linearGradient-1)"></path>
+            <path d="M28,0 L28,4.9 C15.2422223,4.9 4.9,15.2422223 4.9,28 C4.9,40.7577777 15.2422223,51.1 28,51.1 L28,56 C12.536027,56 0,43.463973 0,28 C0,12.536027 12.536027,0 28,0 Z" id="路径" fill="url(#linearGradient-2)"></path>
+            <circle id="Oval" fill="#EDEDED" cx="28.35" cy="2.45" r="2.45"></circle>
+        </g>
+    </g>
+</svg>

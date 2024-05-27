@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>White Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="White-Icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2">
+            <g id="Group" fill="#D8D8D8" fill-opacity="0">
+                <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+            </g>
+            <g id="Group" transform="translate(3.500000, 4.000000)">
+                <rect id="Path" fill="#FFFFFF" x="7.5" y="12.5" width="2" height="3"></rect>
+                <path d="M12.9981371,15.0901743 L12.9981371,8.80898016 L16.1132705,8.80898016 C16.144088,8.80898016 16.1777599,8.77443122 16.1777599,8.72139461 C16.1777599,8.69374853 16.1675546,8.66846896 16.1514455,8.65194034 L8.53817506,0.840371408 C8.5146137,0.816196356 8.4853863,0.816196356 8.46182494,0.840371408 L0.84855448,8.65194034 C0.813468665,8.68794002 0.813468665,8.7548492 0.84855448,8.79084887 C0.86064999,8.80325943 0.874110469,8.80898016 0.88672954,8.80898016 L4.00186288,8.80898016 L4.00186288,15.0901743 C4.00186288,15.1432109 4.03553479,15.1777599 4.0663523,15.1777599 L12.9336477,15.1777599 C12.9644652,15.1777599 12.9981371,15.1432109 12.9981371,15.0901743 Z" id="Path" stroke="#FFFFFF" stroke-width="1.64448024"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">多端测试应用</string>
+    <string name="wxa_btn_hint">启动小程序</string>
+</resources>

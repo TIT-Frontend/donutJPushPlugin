@@ -1,0 +1,6 @@
+# YOUR_PLUGIN_ID 替换成你的插件 id
+target 'wxca742ba6781a54fd' do
+  pod "JPushDonut", :path => "."
+  pod 'JCore', '3.2.3-noidfa'
+  pod 'JPush', '4.8.0'
+end

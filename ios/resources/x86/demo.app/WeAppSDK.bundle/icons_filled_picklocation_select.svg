@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="52px" viewBox="0 0 32 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>图钉</title>
+    <g id="图钉" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M16,0 C24.836556,0 32,7.163444 32,16 C32,24.1590867 25.8928456,30.8917711 18.0004312,31.8761587 L18,50 C18,51.1045695 17.1045695,52 16,52 C14.8954305,52 14,51.1045695 14,50 L14.0000686,31.876221 C6.10741226,30.8920553 0,24.159259 0,16 C0,7.163444 7.163444,0 16,0 Z" id="路径" fill="#000000"></path>
+    </g>
+</svg>

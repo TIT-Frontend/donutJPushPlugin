@@ -1,0 +1,53 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  row-gap: 50rpx;
+} 
+
+page {
+  height: 100vh;
+}
+
+.quick-start-title {
+  font-size: 56rpx;
+  font-weight: 500;
+}
+
+.quick-start-content {
+  height: unset;
+  row-gap: 40rpx;
+  padding: 0 60rpx;
+  font-size: 32rpx;
+  align-items: flex-start;
+  line-height: 46rpx;
+  color: rgba(0,0,0,0.6);
+}
+
+.quick-start-content-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.quick-start-content-item-text {
+  margin-left: 16rpx;
+  text-align: justify;
+}
+
+.quick-start-tips {
+  padding: 0 40rpx;
+  font-size: 22rpx;
+  color: rgba(0,0,0,0.6);
+  margin-top: 20rpx;
+}
+
+.btn {
+  color: #fff;
+  background-color: #FFAC0B;
+}
+

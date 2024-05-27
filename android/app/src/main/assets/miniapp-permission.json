@@ -1,0 +1,8 @@
+{
+  "runtimePermissions": {
+    "android.permission.CAMERA": "用于访问相机拍照和录像功能",
+    "android.permission.WRITE_EXTERNAL_STORAGE": "用于读取和写入外部存储设备",
+    "android.permission.READ_EXTERNAL_STORAGE": "用于读取外部存储设备上的文件"
+  }
+
+}

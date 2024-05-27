@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>miniModuleId</key>
+    <string>wx03804765e7d2096d</string>
+    <key>miniModulePath</key>
+    <string>module</string>
+    <key>sdkKey</key>
+    <string>96O8uNpIm8</string>
+    <key>sdkSecret</key>
+    <string>1fZIXDAqa_5f4TmI66CfMg</string>
+    <key>enableDebugLog</key>
+    <false/>
+    <key>privacy</key>
+    <dict>
+      <key>enable</key>
+      <false/>
+      <key>template</key>
+      <string>configs/defaultPrivacy.json</string>
+    </dict>
+    <key>enableVConsole</key>
+    <string>open</string>
+    <key>plugins</key>
+    <dict>
+      <key>loadWhenStart</key>
+      <array>
+        <string>wxca742ba6781a54fd</string>
+      </array>
+    </dict>
+  </dict>
+</plist>

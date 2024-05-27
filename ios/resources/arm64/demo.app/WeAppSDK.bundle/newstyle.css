@@ -1,0 +1,121 @@
+
+debug_root_view {
+    background-color : #FFFFFF;
+}
+
+debug_test_label {
+    parent-align : centerX;
+    origin-y : 20A;
+    text : Common_Cancel;
+    color : #00C777;
+    font : 25 medium;
+    background-color : clear;
+    sizeToFit : true;
+}
+
+debug_test_button {
+    parent-align : centerX;
+    origin-y : 28A;
+    text : "WCPay_WXBorrowMoneyItem_Title";
+    width : 100;
+    height : 80;
+    color : #FF0000;
+    font : 25 medium;
+    color-hl : #FFFF00;
+    border-color : #000000;
+    border-width : 1;
+    border-radius : 25;
+    background-color : #FFFFFF;
+}
+
+debug_test_view {
+    parent-align : centerX;
+    origin-y : 40A;
+    width : 50;
+    height : 50;
+    border-color : #000000;
+    border-width : 0.0;
+    color : #000000;
+}
+
+debug_test_imageView {
+    parent-align : centerX;
+    origin-y : 55A;
+    image : "ScanTrans_HL";
+    width : 70;
+    height : 70;
+}
+
+mminput_solitaire_tips_bg_content {
+    border-color : FG_3;
+    border-width : 1 px;
+    border-radius : 1A;
+    background-color : BG_5;
+}
+
+mminput_solitaire_tips_info {
+    width : 3A;
+    height : 3A;
+}
+
+mminput_solitaire_tips_info_label {
+    origin-x : 20;
+    origin-y : 12;
+    text : "Solitaire_Format_Collect_Tips_Info";
+    color : FG_1;
+    alpha : 0.5;
+    font : 14;
+    sizeToFit : true;
+}
+
+mminput_solitaire_tips_info_icon {
+    width : 3A;
+    height : 3A;
+    margin-left : 2A;
+    svg-image : "icons_outlined_table" FG_0 3A 3A;
+}
+
+mminput_solitaire_tips_arrow_icon {
+    width : 12;
+    height : 3A;
+    margin-right : 2A;
+    svg-image : "icons_outlined_arrow" FG_0 12 3A;
+}
+
+mminput_solitaire_tips_info_action {
+    color : FG_0;
+    alpha : 0.9;
+    font : 17;
+    text : "Solitaire_Format_Edit_Tips_Enter";
+    sizeToFit : true;
+    accessibilityLabel : "Solitaire_Format_Edit_Tips_Enter";
+}
+
+
+record_feedback_warnning_msg_label {
+    text-align : center;
+    color : #FFFFFF;
+    font : 17.0;
+}
+
+record_feedback_timeout_label {
+    text-align : center;
+    color : #FFFFFF;
+    font : 80;
+}
+
+record_feedback_slideupwardtip_btn {
+    text-align : center;
+    text-selected : "MessageContent_LooseCancel";
+    color : #FFFFFF 0.7;
+    color-selected : #FFFFFF;
+}
+
+record_feedback_operate_tip_label {
+    text-align : center;
+    text : "MessageContent_LooseCancel";
+    color : #FFFFFF 0.85;
+    font : 14;
+    alpha: 0;
+    sizeToFit:true;
+}

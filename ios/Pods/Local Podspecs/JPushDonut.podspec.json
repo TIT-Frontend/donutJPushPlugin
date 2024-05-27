@@ -1,0 +1,27 @@
+{
+  "name": "JPushDonut",
+  "version": "1.0.0",
+  "summary": "Summary of JPushDonut",
+  "homepage": "https://docs.jiguang.cn/jpush",
+  "authors": {
+    "Your Name": "your@email.com"
+  },
+  "source": {
+    "git": "https://github.com/your/repo.git",
+    "tag": "1.0.0"
+  },
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": [
+    "MyPlugin/**/*.{h,c,m,mm,cpp,H}"
+  ],
+  "vendored_frameworks": [
+    "MyPlugin/WeAppNativePlugin.framework"
+  ],
+  "resources": "MyPlugin/Resources/MiniPlugin.bundle"
+}

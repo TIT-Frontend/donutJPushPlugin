@@ -1,0 +1,168 @@
+apply plugin: 'com.android.application'
+// NOTE!!! 重要!!! aar需要kotlin支持,不引入会导致小程序打不开.
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply from: rootProject.file('gradle/build_app.gradle')
+
+
+android {
+    useLibrary 'org.apache.http.legacy'
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    def miniAppConfig = rootProject.ext.miniAppConfig
+    defaultConfig {
+        buildConfigField "String", "SDK_KEY", "\"$miniAppConfig.sdkKey\""
+        buildConfigField "String", "SDK_KEY_SECRET", "\"$miniAppConfig.sdkKeySecret\""
+        buildConfigField "Boolean", "SPLASHSCREEN", "$miniAppConfig.splashscreen"
+        buildConfigField "String", "ENABLE_VCONSOLE", "\"$miniAppConfig.enableVConsole\""
+        buildConfigField "Boolean", "PRIVACY_POPUP", "$miniAppConfig.privacyPopup"
+        buildConfigField "Boolean", "APP_MENU_ENABLE", "$miniAppConfig.appMenuEnable"
+        buildConfigField "String", "SCHEME", "\"$miniAppConfig.scheme\""
+
+        manifestPlaceholders = [
+            MINIAPP_SCHEME : miniAppConfig.scheme,
+       ]
+    }
+
+    signingConfigs {
+        debug {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storeFile rootProject.file('compile/debug.keystore')
+            storePassword 'android'
+        }
+        // 使用该 test.jks 生成的 应用签名 md5 为 d8d9a7134de382c19ff2a42a287ec627
+        release {
+            keyAlias 'test'
+            keyPassword '12345678'
+            storeFile file('./sign/test2.jks')
+            storePassword '12345678'
+        }
+    }
+
+    defaultConfig {
+        multiDexEnabled true
+        versionName miniAppConfig.version
+        versionCode miniAppConfig.versionCode
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+
+        if(rootProject.ext.miniAppConfig.manifestPlaceholders) {
+            // 遍历并增量添加到 manifestPlaceholders
+            rootProject.ext.miniAppConfig.manifestPlaceholders.each { key, value ->
+                manifestPlaceholders[key] = value
+            }
+        }
+
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+            shrinkResources false
+        }
+        release {
+            debuggable false
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+    flavorDimensions 'abi'
+    productFlavors {
+        arm {
+            dimension 'abi'
+            ndk {
+                abiFilters "arm64-v8a", "armeabi-v7a"
+            }
+        }
+
+        arm32 {
+            dimension 'abi'
+            ndk {
+                abiFilter "armeabi-v7a"
+            }
+        }
+
+        arm64 {
+            dimension 'abi'
+            ndk {
+                abiFilter "arm64-v8a"
+            }
+        } 
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+}
+
+// def wxa_sdk_version = rootProject.ext.miniAppConfig.sdkVersion
+def wxa_sdk_version = rootProject.ext.saaaSDKVersionDepend
+def miniAppPluginConfig = rootProject.ext.miniAppPluginConfig
+
+
+def libsDir = rootProject.file('libs')
+
+if (!file("$libsDir/com/tencent/luggage/wxa-standalone-open-runtime-SaaA-plugin-sdk/${wxa_sdk_version}").exists()) {
+    libsDir.mkdir()
+
+    apply plugin: 'de.undercouch.download'
+    
+    def zipFileName = "wxa-standalone-open-runtime-SaaA-sdk-all-${wxa_sdk_version}.zip"
+    download.run {
+        src "https://dldir1.qq.com/WechatWebDev/donut/android/pluginsdk/${zipFileName}"
+        dest libsDir
+    }
+    def zipFilePath = "$libsDir/$zipFileName"
+    copy {
+        def subDir = 'localAar'
+        from {
+            zipTree(zipFilePath).matching { include "$subDir/**" }
+        }
+        into libsDir
+        eachFile { fcp ->
+            fcp.path = fcp.path.replaceFirst("^$subDir", '')
+        }
+        includeEmptyDirs false
+    }
+    file(zipFilePath).delete()
+}
+
+preBuild.dependsOn updateResource
+
+dependencies {
+    if (miniAppPluginConfig.debugWithAar) {
+        def sdkName = miniAppPluginConfig.pluginId
+        def sdkVersion = miniAppPluginConfig.pluginVersion
+        implementation("com.donut.plugin:${sdkName}:${sdkVersion}")
+        println("[I] Use Aar")
+    } else {
+        implementation project(path: ':plugin')
+        println("[I] Use Source Code")
+    }
+    
+    def miniAppConfig = rootProject.ext.miniAppConfig
+    implementation("com.tencent.luggage:wxa-standalone-open-runtime-SaaA-plugin-sdk:${wxa_sdk_version}")
+    
+}

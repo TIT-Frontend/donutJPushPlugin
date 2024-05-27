@@ -1,0 +1,28 @@
+PODS:
+  - JCore (3.2.3-noidfa)
+  - JPush (4.8.0):
+    - JCore (>= 2.0.0)
+  - JPushDonut (1.0.0)
+
+DEPENDENCIES:
+  - JCore (= 3.2.3-noidfa)
+  - JPush (= 4.8.0)
+  - JPushDonut (from `.`)
+
+SPEC REPOS:
+  trunk:
+    - JCore
+    - JPush
+
+EXTERNAL SOURCES:
+  JPushDonut:
+    :path: "."
+
+SPEC CHECKSUMS:
+  JCore: cec6c836350ac9e30f7241e6cd0d5fdcfb927da6
+  JPush: b4b212aa773928303f25dafb5eb048b34232fd3a
+  JPushDonut: 13bfe5eeca7528d08ab5fefc749587e6ccbff158
+
+PODFILE CHECKSUM: ebfa231c489d67b366c61a3df641eac41fb049d5
+
+COCOAPODS: 1.11.3

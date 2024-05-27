@@ -1,0 +1,33 @@
+{
+  "toolkitVersion": "0.10.0",
+  "sdkVersion": "1.0.11",
+  "enableVConsole": "open",
+  "appMenuEnable": true,
+  "sdkKey": "xxx",
+  "sdkKeySecret": "xxxx",
+  "packageName": "com.tencent.weauth",
+  "miniModuleId": "xxxx",
+  "useExtendedSdk": {},
+  "version": "0.0.1",
+  "versionCode": 100,
+  "usePluginSdk": {},
+  "scheme": "weauth",
+  "targetSdkVersion": 34,
+  "privacyPopup": false,
+  "manifestPlaceholders": {
+    "JPUSH_PKGNAME": "你的包名",
+    "JPUSH_APPKEY": "你的 appkey",
+    "JPUSH_CHANNEL": "developer-default",
+    "MEIZU_APPKEY": "MZ-魅族的APPKEY",
+    "MEIZU_APPID": "MZ-魅族的APPID",
+    "XIAOMI_APPKEY" : "MI-您的应用对应的小米的APPKEY",
+    "XIAOMI_APPID" : "MI-您的应用对应的小米的APPID",
+    "OPPO_APPKEY": "OP-oppo的APPKEY",
+    "OPPO_APPID": "OP-oppo的APPID",
+    "OPPO_APPSECRET": "OP-oppo的APPSECRET",
+    "VIVO_APPKEY": "vivo的APPKEY",
+    "VIVO_APPID": "vivo的APPID",
+    "HONOR_APPID": "Honor的APP ID"
+  },
+  "splashscreen": false
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="23px" viewBox="0 0 24 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>icons_filled_miniprogram_add</title>
+    <desc>Created with Sketch.</desc>
+    <g id="v1.3-优化" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="小程序菜单_无分割线_小头像备份" transform="translate(-232.000000, -496.000000)">
+            <g id="Row1" transform="translate(12.000000, 479.500000)">
+                <g id="添加到-我的小程序" transform="translate(204.000000, 0.000000)">
+                    <g id="icons_filled_miniprogram_add" transform="translate(12.000000, 12.000000)">
+                        <polygon id="矩形" fill="#FFC300" transform="translate(22.779388, 22.764536) rotate(-45.000000) translate(-22.779388, -22.764536) " points="21.8460543 17.4312025 23.712721 17.4312025 23.712721 28.0978692 21.8460543 28.0978692"></polygon>
+                        <rect id="矩形" fill="#FFC300" x="18.3333333" y="18.3333333" width="7" height="1.86666667"></rect>
+                        <rect id="矩形" fill="#FFC300" x="18.3333333" y="18.3333333" width="1.86666667" height="7"></rect>
+                        <rect id="矩形备份-2" fill="#FFC300" x="17.3333333" y="4.66666667" width="10" height="10" rx="5"></rect>
+                        <rect id="矩形备份-3" fill="#FFC300" x="4.66666667" y="4.66666667" width="10" height="10" rx="5"></rect>
+                        <rect id="矩形备份" fill="#FFC300" x="4.66666667" y="17.3333333" width="10" height="10" rx="5"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

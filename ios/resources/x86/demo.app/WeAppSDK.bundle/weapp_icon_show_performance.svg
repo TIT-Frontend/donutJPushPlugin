@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="25px" viewBox="0 0 28 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>Icon / Performance</title>
+    <desc>Created with Sketch.</desc>
+    <g id="视觉稿---小程序：小程序菜单优化1.3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.900000036">
+        <g id="开发版-备份" transform="translate(-298.000000, -619.000000)">
+            <g id="Icon-/-Performance" transform="translate(296.000000, 616.000000)">
+                <path d="M24.0959961,27.803995 L23.1071472,26.5454601 C26.0162083,24.3759715 27.9,20.9079773 27.9,17 C27.9,10.4278115 22.5721885,5.1 16,5.1 C9.42781148,5.1 4.1,10.4278115 4.1,17 C4.1,20.9079773 5.98379174,24.3759715 8.8928528,26.5454601 L7.90400392,27.803995 C4.62272061,25.3412232 2.5,21.4185056 2.5,17 C2.5,9.54415588 8.54415588,3.5 16,3.5 C23.4558441,3.5 29.5,9.54415588 29.5,17 C29.5,21.4185056 27.3772794,25.3412232 24.0959961,27.803995 Z" id="形状结合" fill="#000000" fill-rule="nonzero"></path>
+                <path d="M16.5857214,17.9160449 L20.6140086,11.0042505" id="Path-2" stroke="#000000" stroke-width="1.6" transform="translate(18.599865, 14.460148) rotate(10.304846) translate(-18.599865, -14.460148) "></path>
+                <circle id="Oval" fill="#000000" cx="16" cy="17.5" r="2"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

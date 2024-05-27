@@ -1,0 +1,71 @@
+BRAND	微信	微信	微信	WeChat	WeChat	WeChat	WeChat	WeChat	WeChat	WeChat	WeChat	WeChat
+BRAND_Inner	微信	微信	微信	微信	微信	微信	微信	微信	微信	Weixin	Weixin	Weixin
+BRAND_Out	WeChat Out	WeChat Out	WeChat Out	WeChat Out	WeChat Out	WeChat Out	WeChat Out	WeChat Out	WeChat Out	WeChat Out	WeChat Out	WeChat Out
+BRAND_ID	微信号	微信号	微信号	WeChat ID	WeChat ID	WeChat ID	WeChat ID	WeChat ID	WeChat ID	WeChat ID	WeChat ID	WeChat ID
+BRAND_ID_Others	微信号	微信号	微信号	WeChat ID	WeChat ID	WeChat ID	WeChat ID	WeChat ID	WeChat ID	WeChat ID	WeChat ID	WeChat ID
+BRAND_Team	微信团队	微信团队	微信团队	WeChat Team	WeChat Team	WeChat Team	WeChat Team	WeChat Team	WeChat Team	WeChat Team	WeChat Team	WeChat Team
+BRAND_Photo_Frame	微信相框	微信相框	微信相框	WeChat 相框	WeChat 相框	WeChat 相框	WeChat 相框	WeChat 相框	WeChat 相框	WeChat Photo Frame	WeChat Photo Frame	WeChat Photo Frame
+BRAND_Security_Center	微信安全中心	微信安全中心	微信安全中心	WeChat 安全中心	WeChat 安全中心	WeChat 安全中心	WeChat 安全中心	WeChat 安全中心	WeChat 安全中心	WeChat Security Center	WeChat Security Center	WeChat Security Center
+BRAND_Official_Accounts	微信公众号	微信公众号	微信公众号	WeChat 官方帳號	WeChat 官方帳號	WeChat 官方帳號	WeChat 官方帳號	WeChat 官方帳號	WeChat 官方帳號	WeChat Official Accounts	WeChat Official Accounts	WeChat Official Accounts
+WeRead	微信读书	微信读书	微信读书	WeRead	WeRead	WeRead	WeRead	WeRead	WeRead	WeRead	WeRead	WeRead
+WeRun	微信运动	微信运动	微信运动	WeRun	WeRun	WeRun	WeRun	WeRun	WeRun	WeRun	WeRun	WeRun
+WeCom	企业微信	企业微信	企业微信	WeChat Work	WeChat Work	WeChat Work	WeChat Work	WeChat Work	WeChat Work	WeChat Work	WeChat Work	WeChat Work
+Wi-Fi_via_BRAND	微信连Wi-Fi	微信连Wi-Fi	微信连Wi-Fi	WeChat 連 Wi-Fi	WeChat 連 Wi-Fi	WeChat 連 Wi-Fi	WeChat 連 Wi-Fi	WeChat 連 Wi-Fi	WeChat 連 Wi-Fi	Wi-Fi via WeChat	Wi-Fi via WeChat	Wi-Fi via WeChat
+BRAND_Security_Alert	微信安全提醒	微信安全提醒	微信安全提醒	WeChat 安全提醒	WeChat 安全提醒	WeChat 安全提醒	WeChat 安全提醒	WeChat 安全提醒	WeChat 安全提醒	WeChat Security Alert	WeChat Security Alert	WeChat Security Alert
+BRAND_for_Auto	微信车载版	微信车载版	微信车载版	WeChat for Auto	WeChat for Auto	WeChat for Auto	WeChat for Auto	WeChat for Auto	WeChat for Auto	WeChat for Auto	WeChat for Auto	WeChat for Auto
+BRAND_Games	微信游戏	微信游戏	微信游戏	WeChat 遊戲	WeChat 遊戲	WeChat 遊戲	WeChat 遊戲	WeChat 遊戲	WeChat 遊戲	WeChat Games	WeChat Games	WeChat Games
+BRAND_for_Desktop	桌面微信	桌面微信	桌面微信	WeChat 桌面版	WeChat 桌面版	WeChat 桌面版	WeChat 桌面版	WeChat 桌面版	WeChat 桌面版	WeChat for Desktop	WeChat for Desktop	WeChat for Desktop
+BRAND_Cashier_Assistant	微信收款助手	微信收款助手	微信收款助手	WeChat 收款助手	WeChat 收款助手	WeChat 收款助手	WeChat 收款助手	WeChat 收款助手	WeChat 收款助手	WeChat Cashier Assistant	WeChat Cashier Assistant	WeChat Cashier Assistant
+BRAND_Credit_Card	微信信用卡	微信信用卡	微信信用卡	WeChat 信用卡	WeChat 信用卡	WeChat 信用卡	WeChat 信用卡	WeChat 信用卡	WeChat 信用卡	WeChat Credit Card	WeChat Credit Card	WeChat Credit Card
+BRAND_Transfer	微信转账	微信转账	微信转账	WeChat 轉賬	WeChat 轉賬	WeChat 轉賬	WeChat 轉帳	WeChat 轉帳	WeChat 轉帳	WeChat Transfer	WeChat Transfer	WeChat Transfer
+BRAND_Balance	微信零钱	微信零钱	微信零钱	WeChat 餘額	WeChat 餘額	WeChat 餘額	WeChat 餘額	WeChat 餘額	WeChat 餘額	WeChat Balance	WeChat Balance	WeChat Balance
+BRAND_account	微信帐号	微信帐号	微信帐号	WeChat 帳戶	WeChat 帳戶	WeChat 帳戶	WeChat 帳號	WeChat 帳號	WeChat 帳號	WeChat account	WeChat account	WeChat account
+BRAND_fapiao	微信发票	微信发票	微信发票	WeChat 發票	WeChat 發票	WeChat 發票	WeChat 發票	WeChat 發票	WeChat 發票	WeChat Fapiao	WeChat Fapiao	WeChat Fapiao
+BRAND_for_Web1	微信网页版	微信网页版	微信网页版	WeChat 網頁版	WeChat 網頁版	WeChat 網頁版	WeChat 網頁版	WeChat 網頁版	WeChat 網頁版	WeChat for Web	WeChat for Web	WeChat for Web
+Watch_BRAND	Watch 微信	Watch 微信	Watch 微信	Watch WeChat	Watch WeChat	Watch WeChat	Watch WeChat	Watch WeChat	Watch WeChat	Watch WeChat	Watch WeChat	Watch WeChat
+BRAND_for_Mac	Mac 微信	Mac 微信	Mac 微信	WeChat for Mac	WeChat for Mac	WeChat for Mac	WeChat for Mac	WeChat for Mac	WeChat for Mac	WeChat for Mac	WeChat for Mac	WeChat for Mac
+BRAND_for_Web2	网页微信	网页微信	网页微信	網頁版 WeChat	網頁版 WeChat	網頁版 WeChat	網頁版 WeChat	網頁版 WeChat	網頁版 WeChat	WeChat for Web	WeChat for Web	WeChat for Web
+BRAND_for_iPad1	iPad微信	iPad微信	iPad微信	WeChat for iPad	WeChat for iPad	WeChat for iPad	WeChat for iPad	WeChat for iPad	WeChat for iPad	WeChat for iPad	WeChat for iPad	WeChat for iPad
+BRAND_for_Windows	Windows 微信	Windows 微信	Windows 微信	WeChat for Windows	WeChat for Windows	WeChat for Windows	WeChat for Windows	WeChat for Windows	WeChat for Windows	WeChat for Windows	WeChat for Windows	WeChat for Windows
+BRAND_for_Windows_10	Windows 10 微信	Windows 10 微信	Windows 10 微信	WeChat for Windows 10	WeChat for Windows 10	WeChat for Windows 10	WeChat for Windows 10	WeChat for Windows 10	WeChat for Windows 10	WeChat for Windows 10	WeChat for Windows 10	WeChat for Windows 10
+BRAND_for_Web3	web微信	web微信	web微信	WeChat 網頁版	WeChat 網頁版	WeChat 網頁版	WeChat 網頁版	WeChat 網頁版	WeChat 網頁版	WeChat for Web	WeChat for Web	WeChat for Web
+BRAND_for_Web4	微信浏览器聊天版	微信浏览器聊天版	微信浏览器聊天版	WeChat 網頁版	WeChat 網頁版	WeChat 網頁版	WeChat 網頁版	WeChat 網頁版	WeChat 網頁版	WeChat for Web	WeChat for Web	WeChat for Web
+BRAND_for_QQ_Browser	QQ浏览器版微信	QQ浏览器版微信	QQ浏览器版微信	WeChat QQ 瀏覽器版	WeChat QQ 瀏覽器版	WeChat QQ 瀏覽器版	WeChat QQ 瀏覽器版	WeChat QQ 瀏覽器版	WeChat QQ 瀏覽器版	WeChat for QQ Browser	WeChat for QQ Browser	WeChat for QQ Browser
+BRAND_Privileges	微信特权	微信特权	微信特权	WeChat 特權	WeChat 特權	WeChat 特權	WeChat 特權	WeChat 特權	WeChat 特權	WeChat Privileges	WeChat Privileges	WeChat Privileges
+BRAND_for_Government	政务微信	政务微信	政务微信	政務 WeChat	政務 WeChat	政務 WeChat	政務 WeChat	政務 WeChat	政務 WeChat	WeChat for Government	WeChat for Government	WeChat for Government
+BRAND_Favorites	微信收藏	微信收藏	微信收藏	WeChat 收藏	WeChat 收藏	WeChat 收藏	WeChat 收藏	WeChat 收藏	WeChat 收藏	WeChat Favorites	WeChat Favorites	WeChat Favorites
+Cards_and_Offers	微信卡包	微信卡包	微信卡包	WeChat 票證 & 卡券	WeChat 票證 & 卡券	WeChat 票證 & 卡券	WeChat 票證 & 卡券	WeChat 票證 & 卡券	WeChat 票證 & 卡券	WeChat Cards & Offers	WeChat Cards & Offers	WeChat Cards & Offers
+BRAND_for_iPad2	微信 for iPad	微信 for iPad	微信 for iPad	WeChat for iPad	WeChat for iPad	WeChat for iPad	WeChat for iPad	WeChat for iPad	WeChat for iPad	WeChat for iPad	WeChat for iPad	WeChat for iPad
+BRAND_Wallet	微信钱包	微信钱包	微信钱包	WeChat 錢包	WeChat 錢包	WeChat 錢包	WeChat 錢包	WeChat 錢包	WeChat 錢包	WeChat Wallet	WeChat Wallet	WeChat Wallet
+BRAND_Services	微信插件	微信插件	微信插件	WeChat 插件	WeChat 插件	WeChat 插件	WeChat 插件	WeChat 插件	WeChat 插件	WeChat Plus	WeChat Plus	WeChat Plus
+BRAND_Reminders	微信提醒	微信提醒	微信提醒	WeChat 提醒	WeChat 提醒	WeChat 提醒	WeChat 提醒	WeChat 提醒	WeChat 提醒	WeChat Reminders	WeChat Reminders	WeChat Reminders
+BRAND_Top_Stories	微信看一看	微信看一看	微信看一看	WeChat 看一看	WeChat 看一看	WeChat 看一看	WeChat 看一看	WeChat 看一看	WeChat 看一看	WeChat Top Stories	WeChat Top Stories	WeChat Top Stories
+BRAND_Repair_Tool	微信修复工具	微信修复工具	微信修复工具	WeChat 修復工具	WeChat 修復工具	WeChat 修復工具	WeChat 修復工具	WeChat 修復工具	WeChat 修復工具	WeChat Repair Tool	WeChat Repair Tool	WeChat Repair Tool
+WeCom_Business_Card	企业微信名片	企业微信名片	企业微信名片	WeChat Work 名片	WeChat Work 名片	WeChat Work 名片	WeChat Work 名片	WeChat Work 名片	WeChat Work 名片	WeChat Work Business Card	WeChat Work Business Card	WeChat Work Business Card
+BRAND_Split_Bill	微信群收款	微信群收款	微信群收款	WeChat 群組收款	WeChat 群組收款	WeChat 群組收款	WeChat 群組收款	WeChat 群組收款	WeChat 群組收款	WeChat Split Bill	WeChat Split Bill	WeChat Split Bill
+BRAND_Channels	微信视频号	微信视频号	微信视频号	WeChat 影音號	WeChat 影音號	WeChat 影音號	WeChat 影音號	WeChat 影音號	WeChat 影音號	WeChat Channels	WeChat Channels	WeChat Channels
+BRAND_Contacts	微信通讯录	微信通讯录	微信通讯录	WeChat 通訊錄資料	WeChat 通訊錄資料	WeChat 通訊錄資料	WeChat 通訊錄資料	WeChat 通訊錄資料	WeChat 通訊錄資料	WeChat Contacts	WeChat Contacts	WeChat Contacts
+BRAND_Headset	微信耳机	微信耳机	微信耳机	WeChat 耳機	WeChat 耳機	WeChat 耳機	WeChat 耳機	WeChat 耳機	WeChat 耳機	WeChat Headset	WeChat Headset	WeChat Headset
+BRAND_Movie_Tickets	微信电影票	微信电影票	微信电影票	WeChat 電影戲票	WeChat 電影戲票	WeChat 電影戲票	WeChat 電影戲票	WeChat 電影戲票	WeChat 電影戲票	WeChat Movie Tickets	WeChat Movie Tickets	WeChat Movie Tickets
+BRAND_Open_Platform	微信开放平台	微信开放平台	微信开放平台	WeChat 開放平台	WeChat 開放平台	WeChat 開放平台	WeChat 開放平台	WeChat 開放平台	WeChat 開放平台	WeChat Open Platform	WeChat Open Platform	WeChat Open Platform
+BRAND_Official_Account	微信公众号	微信公众号	微信公众号	WeChat 官方帳號	WeChat 官方帳號	WeChat 官方帳號	WeChat 官方帳號	WeChat 官方帳號	WeChat 官方帳號	WeChat Official Account	WeChat Official Account	WeChat Official Account
+BRAND_Index	微信指数	微信指数	微信指数	WeChat 指數	WeChat 指數	WeChat 指數	WeChat 指數	WeChat 指數	WeChat 指數	WeChat Index	WeChat Index	WeChat Index
+BRAND_Top_Topics1	微信热点	微信热点	微信热点	WeChat 熱門話題	WeChat 熱門話題	WeChat 熱門話題	WeChat 熱門話題	WeChat 熱門話題	WeChat 熱門話題	WeChat Top Topics	WeChat Top Topics	WeChat Top Topics
+BRAND_Translate	微信翻译	微信翻译	微信翻译	WeChat 翻譯	WeChat 翻譯	WeChat 翻譯	WeChat 翻譯	WeChat 翻譯	WeChat 翻譯	WeChat Translate	WeChat Translate	WeChat Translate
+BRAND_Top_Topics2	微信热议榜	微信热议榜	微信热议榜	WeChat 熱門討論榜	WeChat 熱門討論榜	WeChat 熱門討論榜	WeChat 熱門討論榜	WeChat 熱門討論榜	WeChat 熱門討論榜	WeChat Top Topics	WeChat Top Topics	WeChat Top Topics
+BRAND_kids_account	儿童手表微信号	儿童手表微信号	儿童手表微信号	兒童手錶 WeChat ID	兒童手錶 WeChat ID	兒童手錶 WeChat ID	兒童手錶 WeChat ID	兒童手錶 WeChat ID	兒童手錶 WeChat ID	Kids' Watch WeChat ID	Kids' Watch WeChat ID	Kids' Watch WeChat ID
+Brand_for_Kids_Watch	微信儿童手表版	微信儿童手表版	微信儿童手表版	WeChat for Kids' Watch	WeChat for Kids' Watch	WeChat for Kids' Watch	WeChat for Kids' Watch	WeChat for Kids' Watch	WeChat for Kids' Watch	WeChat for Kids' Watch	WeChat for Kids' Watch	WeChat for Kids' Watch
+Brand_for_Apple_Watch	Apple Watch 微信	Apple Watch 微信	Apple Watch 微信	WeChat for Apple Watch	WeChat for Apple Watch	WeChat for Apple Watch	WeChat for Apple Watch	WeChat for Apple Watch	WeChat for Apple Watch	WeChat for Apple Watch	WeChat for Apple Watch	WeChat for Apple Watch
+BRAND_Friends	微信朋友	微信朋友	微信朋友	WeChat 朋友	WeChat 朋友	WeChat 朋友	WeChat 朋友	WeChat 朋友	WeChat 朋友	WeChat Friends	WeChat Friends	WeChat Friends
+BRAND_Moments	微信朋友圈	微信朋友圈	微信朋友圈	WeChat 朋友圈	WeChat 朋友圈	WeChat 朋友圈	WeChat 朋友圈	WeChat 朋友圈	WeChat 朋友圈	WeChat Moments	WeChat Moments	WeChat Moments
+Brand_for_Kids_Watch	儿童手表微信	儿童手表微信	儿童手表微信	WeChat for Kids' Watch	WeChat for Kids' Watch	WeChat for Kids' Watch	WeChat for Kids' Watch	WeChat for Kids' Watch	WeChat for Kids' Watch	WeChat for Kids' Watch	WeChat for Kids' Watch	WeChat for Kids' Watch
+Brand_for_Apple_Watch	Apple Watch 微信	Apple Watch 微信	Apple Watch 微信	WeChat for Apple Watch	WeChat for Apple Watch	WeChat for Apple Watch	WeChat for Apple Watch	WeChat for Apple Watch	WeChat for Apple Watch	WeChat for Apple Watch	WeChat for Apple Watch	WeChat for Apple Watch
+BRAND_for_Web5	网页版微信	网页版微信	网页版微信	網頁版 WeChat	網頁版 WeChat	網頁版 WeChat	網頁版 WeChat	網頁版 WeChat	網頁版 WeChat	WeChat for Web	WeChat for Web	WeChat for Web
+BRAND_Copyright_Prefix	腾讯公司 版权所有	腾讯公司 版权所有	腾讯公司 版权所有	騰訊公司 版權所有	騰訊公司 版權所有	騰訊公司 版權所有	騰訊公司 版權所有	騰訊公司 版權所有	騰訊公司 版權所有	腾讯公司 版权所有	腾讯公司 版权所有	腾讯公司 版权所有
+BRAND_Copyright_Suffix	Tencent	Tencent	Tencent	Tencent	Tencent	Tencent	Tencent	Tencent	Tencent	Tencent	Tencent	Tencent
+Compliance_Locale	国家	国家	国家	國家	國家	國家	國家	國家	國家	national	national	national
+BRAND_Transfer_Oversea	WeChat 转账	WeChat 转账	WeChat 转账	WeChat 轉賬	WeChat 轉賬	WeChat 轉賬	WeChat 轉賬	WeChat 轉賬	WeChat 轉賬	WeChat Transfer	WeChat Transfer	WeChat Transfer
+BRAND_Movie_Tickets_Oversea	WeChat 电影票	WeChat 电影票	WeChat 电影票	WeChat 電影戲票	WeChat 電影戲票	WeChat 電影戲票	WeChat 電影票	WeChat 電影票	WeChat 電影票	WeChat Movie Tickets	WeChat Movie Tickets	WeChat Movie Tickets
+Cards_and_Offers_Oversea	WeChat 卡包	WeChat 卡包	WeChat 卡包	WeChat 票證 & 卡券	WeChat 票證 & 卡券	WeChat 票證 & 卡券	WeChat 票證 & 卡券	WeChat 票證 & 卡券	WeChat 票證 & 卡券	WeChat Cards & Offers	WeChat Cards & Offers	WeChat Cards & Offers
+BRAND_Balance_Oversea	WeChat 零钱	WeChat 零钱	WeChat 零钱	WeChat 餘額	WeChat 餘額	WeChat 餘額	WeChat 餘額	WeChat 餘額	WeChat 餘額	WeChat Balance	WeChat Balance	WeChat Balance
+BRAND_Credit_Card_Oversea	WeChat 信用卡	WeChat 信用卡	WeChat 信用卡	WeChat 信用卡	WeChat 信用卡	WeChat 信用卡	WeChat 信用卡	WeChat 信用卡	WeChat 信用卡	WeChat Credit Card	WeChat Credit Card	WeChat Credit Card

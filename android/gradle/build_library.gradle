@@ -1,0 +1,162 @@
+apply plugin: 'com.android.library'
+apply plugin: 'org.jetbrains.kotlin.android'
+apply plugin: 'maven'
+
+android {
+    compileSdk rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdk rootProject.ext.minSdkVersion
+        targetSdk rootProject.ext.targetSdkVersion
+
+
+        versionName rootProject.ext.versionName
+
+        consumerProguardFiles "consumer-rules.pro"
+
+        setProperty("archivesBaseName", "${archivesBaseName}-$versionName")
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+def GROUP_ID = "com.donut.plugin"
+task generatePom {
+    doLast {
+        println "generate pom ${POM_ARTIFACT_ID}"
+        def dir = project.file("${project.buildDir}/outputs/pom/")
+        if (!dir.exists()) {
+            dir.mkdirs()
+        }
+
+    
+
+        pom {
+            project {
+                groupId GROUP_ID
+                artifactId POM_ARTIFACT_ID
+                version rootProject.ext.versionName
+                packaging "aar"
+            }
+
+            withXml {
+                Node root = asNode()
+
+                def depsNode = root["dependencies"][0] ?: root.appendNode("dependencies")
+                depsNode.children().removeAll { true }
+
+                if (project.ext.has('pomDeps')) {
+                   project.ext.pomDeps.each { String path, String version ->
+                       def paths = path.split(':')
+                       def group = paths[0]
+                       def artifactId = paths[1]
+
+                       def node = depsNode.appendNode('dependency')
+                       node.appendNode('groupId', group)
+                       node.appendNode('artifactId', artifactId)
+                       node.appendNode('version', version)
+                       node.appendNode('scope', "compile")
+                   }
+                }
+            }
+        }.writeTo("${dir}/${POM_ARTIFACT_ID}-${rootProject.ext.versionName}.pom")
+    }
+}
+
+def localAar = 'localAar'
+
+def localAarGroupPath = GROUP_ID.replace(".", "/")
+def aarDir = rootProject.file("${localAar}/${localAarGroupPath}/${POM_ARTIFACT_ID}/${rootProject.ext.versionName}")
+        .with {
+            it.mkdirs()
+            return it
+        }
+
+task copy {
+    doLast {
+        println("copy file ${POM_ARTIFACT_ID}")
+        copy {
+            from("${buildDir}/outputs/pom/") {
+                include "${POM_ARTIFACT_ID}-${rootProject.ext.versionName}.pom"
+            }
+            into aarDir
+        }
+
+        copy {
+            from("${buildDir}/outputs/aar/") {
+                include "*-release.aar"
+            }
+            rename {
+                return "${POM_ARTIFACT_ID}-${rootProject.ext.versionName}.aar"
+            }
+            into aarDir
+        }
+    }
+}
+
+task zip(type: Zip) {
+    archiveName "${POM_ARTIFACT_ID}-${rootProject.ext.versionName}.zip"
+    destinationDir aarDir
+    from(aarDir) {
+        include '*.aar'
+        include '*.pom'
+    }
+}
+
+
+task zipmapping(type: Zip) {
+    archiveName "${POM_ARTIFACT_ID}-${rootProject.ext.versionName}-mapping.zip"
+    destinationDir rootProject.file("${buildDir}/outputs/mapping/")
+    from(rootProject.file("${buildDir}/outputs/mapping/release/")) {
+        include '*.txt'
+    }
+}
+
+
+afterEvaluate {
+    build.finalizedBy(zipmapping)
+    zipmapping.dependsOn(copy)
+    copy.dependsOn(generatePom)
+}
+
+ext.clearDuplicatedJniLibs = { files ->
+    afterEvaluate {
+        task clearTask {
+            doFirst {
+                def buildDir = buildDir
+                files = files.collect {
+                    "/intermediates/exploded-aar/$it"
+                }
+                delete(fileTree(dir: buildDir, includes: files))
+            }
+        }
+
+        project.tasks.all { task ->
+            def name = task.name
+            if (name.contains('merge') && name.contains('JniLibFolders')) {
+                task.dependsOn(clearTask)
+            }
+        }
+
+        clearTask.mustRunAfter(project.tasks.matching { task -> task.name.contains('explode') })
+    }
+}
+
+

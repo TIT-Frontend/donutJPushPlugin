@@ -1,0 +1,21 @@
+<!--pages/ios/ios.wxml-->
+<view class="container">
+
+  <view class="quick-start-title">iOS 插件快速开始</view>
+
+  <view class="container quick-start-content">
+    <view wx:for="{{quickStartContents}}" class="quick-start-content-item">
+      <view>{{index+1}}.</view>
+      <view class="quick-start-content-item-text">{{item}}</view>
+    </view>
+  </view>
+
+  <button bindtap="onLoadPlugin" class="btn">点击加载多端插件</button>
+  <button bindtap="onUsePlugin" class="btn">点击调用多端插件</button>
+	<button bindtap="setBadge" class="btn">setBadge</button>
+	<button bindtap="clearBadge" class="btn">clearBadge</button>
+	
+
+  <view class="quick-start-tips" bindtap="copyLink">更多 iOS 插件开发指引可点击 🔗  复制链接在浏览器打开查看</view>
+
+</view>

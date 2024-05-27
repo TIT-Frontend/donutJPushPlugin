@@ -1,0 +1,8 @@
+{
+  "pluginVersion": "1.0.0",
+  "debugSaaAVersion": "1.0.6",
+  "debugWithAar": false,
+  "devtoolsResourceUrl": "http://127.0.0.1:8001/miniappplugin/buildAndroidArchive",
+  "pluginId": "wxca742ba6781a54fd",
+  "pluginPackageName": "com.donut.wx45c6d53ff86fd405"
+}

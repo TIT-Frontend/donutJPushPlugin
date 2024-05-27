@@ -1,0 +1,22 @@
+
+<!--To modify this file, plz BE AWARE THAT colorDefine might auto process this file.
+To avoid compiling issues, DO NOT add tokens that are CONFLCIT WITH STANDARD DESIGN TOKEN.-->
+<resources>
+    <color name="White">#FFFFFF</color>
+    <color name="BW_97">#F7F7F7</color>
+    <color name="BW_95">#F2F2F2</color>
+    <color name="BW_93">#EDEDED</color>
+    <color name="BW_90">#E5E5E5</color>
+    <color name="BW_50">#808080</color>
+    <color name="BW_20">#303030</color>
+    <color name="BW_10">#181818</color>
+    <color name="BW_0">#000000</color>
+    <color name="BW_BG_100">#FFFFFF</color>
+    <color name="BW_BG_20">#333333</color>
+    <color name="BW_BG_0">#000000</color>
+    <color name="Link_Finder">#002666,#DEE9FF</color>
+    <color name="TextGreen">#06AE56,#259C5C</color>
+    <color name="Subbrand_FG_0_5">#000000E5,#FFFFFF99</color>
+    <color name="Subbrand_Link_100">#002666,#DEE9FF</color>
+    <color name="Subbrand_OrangeRed_100">#FF6146,#FF6146</color>
+</resources>

@@ -1,0 +1,106 @@
+#commonTableCellMargin {
+    left:16;
+}
+
+#common_default
+{
+    common_font_size : 17;
+    common_font_midsmall_size : 14 dynamic;
+    common_font_small_size : 12;
+}
+
+#font_set {
+    alllevel : 16 17 18 19 20.5 22 23.8;
+    chatLevel : 16 17 18 19 21 25.5 27.5;
+    webLevel : 16 17 18 19 20.5 24.5;
+}
+
+#fts_cell {
+    label_height : 25 dynamic;
+    cell_height : 64 dynamic;
+    individual_cell_height : 72 dynamic;
+    common_cell_height : 100 dynamic;
+    common_cell_thumb_height : 72 dynamic;
+    common_cell_thumb_width : 72 dynamic;
+    common_cell_detail_icon_width : 14 dynamic;
+    common_cell_detail_icon_height : 14 dynamic;
+    more_cell_height : 45 dynamic;
+    fav_cell_height : 96 dynamic;
+    brand_contact_cell_height : 85 dynamic;
+    cell_margin_top : 12 dynamic;
+    cell_margin_bottom : 12 dynamic;
+    cell_headimage_padding_top : 9 dynamic;
+    cell_headimage_width : 40 dynamic;
+    cell_headimage_height : 40 dynamic;
+    title_text_font : 17 dynamic;
+    localpage_title_text_font : 15 dynamic;
+    small_text_font : 13 dynamic;
+    mid_text_font : 14 dynamic;
+    timeline_desc_text_font : 15 dynamic;
+    cell_vmargin_small : 1.5 dynamic;
+    cell_vmargin_normal : 4 dynamic;
+    table_footer_view_height : 50 dynamic;
+    first_title_cell_height : 45 dynamic;
+    title_cell_height : 48 dynamic;
+    mid_text_height : 17 dynamic;
+    small_text_height : 16 dynamic;
+    title_text_height : 21 dynamic;
+    poi_cell_height : 100 dynamic;
+    poi_star_container_height: 13 dynamic;
+    poi_star_vmargin : 4 dynamic;
+    cell_default_label_height : 20 dynamic;
+    fts_web_search_base_result : 156 dynamic;
+    fts_web_search_one_line_result : 134 dynamic;
+    fts_web_search_base_comm_result : 144 dynamic;
+    fts_web_search_sug : 40 dynamic;
+}
+
+#mainframe_dropdown
+{
+    wechatlogo_image: "MainFrameLogo";
+    wechatlogo_bottom_margin: 30;
+}
+
+/*   主界面 */
+#mainframe_table
+{
+    /*主会话列表项高度*/
+    cell_height: 72;
+    /*分割线颜色*/
+    cell_line_color:#DEDEDE;
+    /*顶部offset*/
+    cell_headimg_top_margin:12;
+    cell_msglabel_top_margin:12;
+    cell_labelmsg_bottom_margin:12;
+    /*   用户名fontsize */
+    cell_msglabel_textsize:17;
+    cell_msglabel_desc_textsize:14;
+    cell_badge_top_margin:-3;
+    cell_reddot_top_margin:-1;
+    cell_labelmsg_textsize:14;
+    /*left margin*/
+    cell_headimg_left_margin:16;
+    cell_namelabel_left_margin:12;
+    /*right margin*/
+    cell_timelabel_right_margin:16;
+    cell_timelabel_textsize:12;
+    /*headimg size*/
+    cell_headimg_size: 48 48;
+    /*chatnotpush right margin*/
+    cell_chatnotpushimg_right_margin:16;
+    /* Original Icon */
+    original_icon_width: 31;
+    original_icon_height: 13;
+    original_icon_offset_nickname: 6;
+}
+
+#MFTitleView
+{
+    earpiece_margin_left : 4;
+}
+
+#navigation_bar
+{
+    landscape_height : 32;
+    titleview_fontsize : 17;
+}

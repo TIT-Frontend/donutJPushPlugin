@@ -1,0 +1,64 @@
+{
+    "AppMaxRunningCount"  : 5,
+    "AppserviceMaxDataSize"  : 1048576000,
+    "AttrSyncForceUpdateTime"  : 7,
+    "CDNBaseURL"  : "https://res.servicewechat.com/weapp",
+    "DeadThreadBanDuration"  : 1800,
+    "DeadThreadMaxTimeToLive"  : 30,
+    "DownloadFileSizeLimit"  : 2048,
+    "GameDownloadFileSizeLimit"  : 2048,
+    "GameMaxRunningCount"  : 1,
+    "GamePerfCollectInterval"  : 60,
+    "GamePerfCollectSamplePercentage"  : "0.001",
+    "HTTPSetting"  :     {
+        "DownloadMaxTimeoutMS"  : 60000,
+        "HTTPHeaderMode"  : "BlackList",
+        "HTTPHeaderReferer"  : "servicewechat.com",
+        "HeaderBlackList"  :    [
+             "User-Agent"
+        ],
+        "HeaderWhiteList"  :  [],
+        "RequestMaxTimeoutMS"  : 60000,
+        "UploadMaxTimeoutMS"  : 60000,
+        "WebsocketMaxTimeoutMS"  : 60000
+    },
+    "MaxGlobalStorageItemSize"  : 10485760,
+    "MaxGlobalStorageSize"  : 209715200,
+    "MaxLocalStorageItemSize"  : 10485760,
+    "NativeBufferQueueLimitByte"  : 314572800,
+    "NativeBufferSizeLimitByte"  : 104857600,
+    "PackageManager"  :     {
+        "CheckInterval"  : 86400,
+        "ClientStorageMinMB"  : 256,
+        "ClientStoragePercent"  : 5,
+        "WithoutContactClearSeconds"  : 864000
+    },
+    "PreDownloadUserNameBlackList"  :    [
+        "gh_ae37ddc31cfa@app"
+    ],
+    "StarNumberLimitation"  : 50,
+    "SubContextImgDomain"  : [
+        "https://wx.qlogo.cn/",
+        "https://thirdwx.qlogo.cn/"
+    ],
+    "SuppendCheckUpdateInterval"  : 300,
+    "SyncLaunchSceneList"  :  [
+        1037,
+        1055,
+        1099
+    ],
+    "SyncVersionSetting"  :    {
+        "PullVersionInterval"  : 21600,
+        "PullVersionMaxCount"  : 1000,
+        "PullVersionMaxCountPerRequest"  : 50,
+        "PullVersionWxaUsageLastInterval"  : 2592000
+    },
+    "TaskBar"  :     {
+        "NewTaskBarRecentsItemCountLimitation"  : 12
+    },
+    "TempFileSizeLimitTotal"  : 300,
+    "WeUseRecallInterval"  : 86400,
+    "WidgetDrawMinInterval"  : 4500,
+    "WidgetImageFlowLimitDuration"  : 1800,
+    "WidgetImageFlowLimitMaxSize"  : 307200
+}

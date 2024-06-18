@@ -75,7 +75,7 @@ WEAPP_EXPORT_PLUGIN_METHOD_ASYNC(registerPush, @selector(handlerRegisterPush:wit
 #pragma mark - core funs
 
 - (BOOL)registerPush {
-    NSLog(@"janzenplugin Start real register Push");
+    NSLog(@"Start real register Push");
     NSBundle *frameworkBundle = [NSBundle bundleForClass:[MyPlugin class]];
     NSURL *url = [frameworkBundle URLForResource:@"MiniPlugin" withExtension:@"bundle"];
     if (url) {
@@ -111,7 +111,7 @@ WEAPP_EXPORT_PLUGIN_METHOD_ASYNC(registerPush, @selector(handlerRegisterPush:wit
                     }
                     
                     [JPUSHService registerForRemoteNotificationConfig:entity delegate:self];
-                    NSLog(@"janzenplugin registerForRemoteNotificationConfig done");
+                    NSLog(@"registerForRemoteNotificationConfig done");
                     
                     // Required
                     // init Push
@@ -142,14 +142,14 @@ WEAPP_EXPORT_PLUGIN_METHOD_ASYNC(registerPush, @selector(handlerRegisterPush:wit
 }
 
 - (void)sendMsg:(NSDictionary *)msg {
-    NSLog(@"janzenplugin sendMsg");
+    NSLog(@"sendMsg");
     if (self.hasGotCache == YES) {
-        NSLog(@"janzenplugin after Got cache, and sendMsg directly");
+        NSLog(@"after Got cache, and sendMsg directly");
         [self sendMiniPluginEvent:@{
             @"ios": msg
         }];
     } else {
-        NSLog(@"janzenplugin before Got cache , and cache");
+        NSLog(@"before Got cache , and cache");
         [self.cachedMsgs addObject:@{
             @"ios": msg
         }];
@@ -160,7 +160,7 @@ WEAPP_EXPORT_PLUGIN_METHOD_ASYNC(registerPush, @selector(handlerRegisterPush:wit
 
 // iOS 12 Support
 - (void)jpushNotificationCenter:(UNUserNotificationCenter *)center openSettingsForNotification:(UNNotification *)notification{
-    NSLog(@"janzenplugin openSettingsForNotification");
+    NSLog(@"openSettingsForNotification");
     
     NSDictionary * userInfo = notification.request.content.userInfo;
     if (notification && [notification.request.trigger isKindOfClass:[UNPushNotificationTrigger class]]) {
@@ -182,7 +182,7 @@ WEAPP_EXPORT_PLUGIN_METHOD_ASYNC(registerPush, @selector(handlerRegisterPush:wit
 
 // iOS 10 Support
 - (void)jpushNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(NSInteger))completionHandler {
-    NSLog(@"janzenplugin willPresentNotification withCompletionHandler");
+    NSLog(@"willPresentNotification withCompletionHandler");
     // Required
     NSDictionary * userInfo = notification.request.content.userInfo;
     if([notification.request.trigger isKindOfClass:[UNPushNotificationTrigger class]]) {
@@ -198,7 +198,7 @@ WEAPP_EXPORT_PLUGIN_METHOD_ASYNC(registerPush, @selector(handlerRegisterPush:wit
 
 // iOS 10 Support
 - (void)jpushNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)())completionHandler {
-    NSLog(@"janzenplugin didReceiveNotificationResponse withCompletionHandler");
+    NSLog(@"didReceiveNotificationResponse withCompletionHandler");
     
     // Required
     NSDictionary * userInfo = response.notification.request.content.userInfo;
@@ -214,7 +214,7 @@ WEAPP_EXPORT_PLUGIN_METHOD_ASYNC(registerPush, @selector(handlerRegisterPush:wit
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
-    NSLog(@"janzenplugin didReceiveRemoteNotification with fetchCompletionHandler");
+    NSLog(@"didReceiveRemoteNotification with fetchCompletionHandler");
     // Required, iOS 7 Support
     [JPUSHService handleRemoteNotification:userInfo];
     completionHandler(UIBackgroundFetchResultNewData);
@@ -226,7 +226,7 @@ WEAPP_EXPORT_PLUGIN_METHOD_ASYNC(registerPush, @selector(handlerRegisterPush:wit
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-    NSLog(@"janzenplugin didReceiveRemoteNotification");
+    NSLog(@"didReceiveRemoteNotification");
     // Required, For systems with less than or equal to iOS 6
     [JPUSHService handleRemoteNotification:userInfo];
     [self sendMsg:@{
@@ -260,16 +260,16 @@ WEAPP_EXPORT_PLUGIN_METHOD_ASYNC(registerPush, @selector(handlerRegisterPush:wit
 }
 
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    NSLog(@"janzenplugin didFinishLaunchingWithOptions");
+    NSLog(@"didFinishLaunchingWithOptions");
     NSDictionary *remoteNotification = [launchOptions objectForKey: UIApplicationLaunchOptionsRemoteNotificationKey];
     if (remoteNotification) {
-        NSLog(@"janzenplugin didFinishLaunchingWithOptions with remoteNotification");
+        NSLog(@"didFinishLaunchingWithOptions with remoteNotification");
 //        [self sendMsg:@{
 //            @"type": @"didFinishLaunchingWithOptions",
 //            @"data":remoteNotification,
 //        }];
     } else {
-        NSLog(@"janzenplugin didFinishLaunchingWithOptions without remoteNotification");
+        NSLog(@"didFinishLaunchingWithOptions without remoteNotification");
     }
     
     self.launchOptions = launchOptions;
@@ -301,12 +301,18 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     [JPUSHService registerDeviceToken:deviceToken];
     
     if (self.handleRegisterPushCallback) {
-        self.handleRegisterPushCallback(@{
-            @"success": @YES,
-            @"token": token
-        });
-        
-        self.handleRegisterPushCallback = nil;
+        [JPUSHService registrationIDCompletionHandler:^(int resCode, NSString *registrationID) {
+            NSLog(@"resCode : %d,registrationID: %@",resCode,registrationID);
+            
+            self.handleRegisterPushCallback(@{
+                @"success": @YES,
+                @"deviceToken": token,
+                @"resCodeOfRegistrationID": @(resCode),
+                @"registrationID": registrationID
+            });
+            
+            self.handleRegisterPushCallback = nil;
+        }];
     }
 }
 

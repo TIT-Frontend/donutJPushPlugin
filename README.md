@@ -10,6 +10,12 @@
 
 - 需前往极光平台，开通[极光消息推送服务](https://www.jiguang.cn/push)并按照文档开通和配置相关信息
 
+#### changlog
+
+**iOS**
+1.0.1
+1. `A` registerPush 返回 registrationID
+
 ## 一、iOS 对接指南
 
 ### 1. 配置插件
@@ -125,8 +131,11 @@ NSDictionary * userInfo = notification.request.content.userInfo;
 ```json
 {
   "success": true,
-  "token": "xxxx",
-  "msg": "xxx"
+  "deviceToken": "xxx",
+  "registrationID": "xxx",
+  "resCodeOfRegistrationID": 0, // 0为成功，其他为失败
+  "msg": "xxx",
+  "token": "xxxx", // 1.0.1 开始废弃
 }
 ```
 

@@ -63,6 +63,7 @@
 1. 需要去苹果的后台申请一个新的 Bundle Id，要以主 Bundle Id 为前缀。
 2. 申请对应的开发版和分发版的 profile。然后分别配置在对应的 profilePath 和 distributeProfilePath 中
 3. profile 的证书需要都使用主包 profile 的证书。
+**4. 1.0.0版本 appexProfiles 的 key 为 JPushNSE，1.0.1版本 appexProfiles 的 key 为 NSE。**
 
 ```json
 "mini-plugin": {
@@ -306,5 +307,6 @@ clearBadge() {
 - 极光控制台发送消息时，配置 Android点击通知打开选择`DeepLink`，也就是`scheme`
 
 <img src="https://testchu-7gy8occc8dcc14c3-1304825656.tcloudbaseapp.com/img%2Fmelody%2F%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_1fadc823-df8e-4996-afc5-347d15250424.png" />
+
 
 - 在 js 侧使用[wx.miniapp.registOpenURL](https://dev.weixin.qq.com/docs/framework/dev/jsapi/miniapp/registOpenURL.html)监听

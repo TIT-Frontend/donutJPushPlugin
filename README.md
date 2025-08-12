@@ -63,7 +63,7 @@
 1. 需要去苹果的后台申请一个新的 Bundle Id，要以主 Bundle Id 为前缀。
 2. 申请对应的开发版和分发版的 profile。然后分别配置在对应的 profilePath 和 distributeProfilePath 中
 3. profile 的证书需要都使用主包 profile 的证书。
-**4. 1.0.0版本 appexProfiles 的 key 为 JPushNSE，1.0.1版本 appexProfiles 的 key 为 NSE。**
+4. **1.0.0版本 appexProfiles 的 key 为 JPushNSE，1.0.1版本 appexProfiles 的 key 为 NSE。**
 
 ```json
 "mini-plugin": {
@@ -310,3 +310,4 @@ clearBadge() {
 
 
 - 在 js 侧使用[wx.miniapp.registOpenURL](https://dev.weixin.qq.com/docs/framework/dev/jsapi/miniapp/registOpenURL.html)监听
+
